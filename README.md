@@ -16,6 +16,6 @@
 
 1.访问www.a.com域名，执行登录操作；
 
-2.分别访问www.b.com、www.c.com可以看到已经处于登录状态；
+2.分别访问www.b.com www.c.com可以看到已经处于登录状态；
 
-3.分别访问www.b.com/getcookie.php、www.c.com/getcookie.php、www.u.com/getcookie.php都可以看到已经生成cookie；
+3.分别访问www.b.com/getcookie.php www.c.com/getcookie.php www.u.com/getcookie.php都可以看到已经生成cookie；
