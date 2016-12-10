@@ -20,4 +20,7 @@
 
 2.分别访问www.b.com和www.c.com可以看到已经处于登录状态；
 
-3.分别访问www.b.com/getcookie.php和www.c.com/getcookie.php和www.u.com/getcookie.php都可以看到已经生成cookie；
+3.分别访问www.b.com/getcookie.php和www.c.com/getcookie.php和www.u.com/getcookie.php都可以看到已经生成cookie，cookie的内容是一个base64_encode( json_encode(['user_name'=>$_POST['user_name'],'user_password'=>$_POST['user_password']]))的字符串；
+
+#注意点
+此demo只是一个简单的跨域共享cookie的代码；关于cookie的安全性，你可能需要了解下加解密算法，将cookie信息加密后存入客户端
